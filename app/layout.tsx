@@ -10,8 +10,11 @@ const splineSans = Spline_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "SiDagas | Sistem Informasi Subsidi Gas",
+  title: "SiDagas",
   description: "Akses informasi ketersediaan gas 3kg resmi pemerintah dengan transparansi dan kemudahan.",
+  icons: {
+    icon: "/SiDagas.logo.png",
+  },
 };
 
 export default function RootLayout({

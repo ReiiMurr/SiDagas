@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Navbar } from "@/components/Navbar";
-import { Flame, MapPin, ShieldCheck, ArrowRight, Activity, Globe, Zap, CheckCircle2 } from "lucide-react";
+import { MapPin, ShieldCheck, ArrowRight, Activity, Globe, Zap, CheckCircle2 } from "lucide-react";
 import { motion } from "framer-motion";
 import GasExploration from "@/components/GasExploration";
 import { supabase } from "@/lib/supabase";
@@ -67,8 +67,8 @@ export default function Home() {
                 </motion.div>
 
                 <h1 className="text-5xl lg:text-8xl font-medium text-neutral-900 leading-[0.95] tracking-tight">
-                  Energi Tepat <br />
-                  <span className="text-primary-600 font-bold italic">Untuk Rakyat.</span>
+                  Sistem Pendataan <br />
+                  <span className="text-primary-600 font-bold italic">Gas Subsidi.</span>
                 </h1>
                 
                 <p className="text-lg lg:text-xl text-neutral-500 font-medium leading-relaxed max-w-xl mx-auto lg:mx-0">
@@ -133,8 +133,8 @@ export default function Home() {
             {/* Brand Column */}
             <div className="col-span-12 lg:col-span-4 space-y-8">
               <div className="flex items-center gap-3">
-                <div className="bg-primary-600 p-2 rounded-xl shadow-sm">
-                  <Flame className="w-6 h-6 text-white" />
+                <div className="relative w-10 h-10">
+                  <Image src="/SiDagas.logo.png" alt="SiDagas Logo" fill className="object-contain" />
                 </div>
                 <span className="text-2xl font-bold text-neutral-900 tracking-tight">SiDagas</span>
               </div>

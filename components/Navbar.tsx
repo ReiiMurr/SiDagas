@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Flame, LogIn, Menu, X } from "lucide-react";
+import Image from "next/image";
+import { LogIn, Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -30,8 +31,8 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="flex justify-between items-center">
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="bg-primary-600 p-2 rounded-xl transition-all group-hover:scale-110 shadow-lg shadow-primary-500/20">
-              <Flame className="w-5 h-5 text-white" />
+            <div className="relative w-10 h-10 transition-all group-hover:scale-110">
+              <Image src="/SiDagas.logo.png" alt="SiDagas Logo" fill className="object-contain" priority />
             </div>
             <span className="text-2xl font-bold text-neutral-900 tracking-tight">
               SiDagas

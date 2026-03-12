@@ -86,7 +86,7 @@ export default function AdminOverview() {
 
       <div className="grid grid-cols-12 gap-8">
         {/* Recent Activity */}
-        <div className="col-span-12 lg:col-span-8 space-y-6">
+        <div className="col-span-12 space-y-6">
           <div className="flex items-center justify-between border-b border-neutral-100 pb-4">
              <h3 className="text-xl font-bold text-neutral-900">Aktivitas Terbaru</h3>
              <button className="text-primary-600 text-sm font-bold hover:underline">Lihat Semua</button>
@@ -111,29 +111,6 @@ export default function AdminOverview() {
                </div>
              )}
           </div>
-        </div>
-
-        {/* System Health / Alert */}
-        <div className="col-span-12 lg:col-span-4 space-y-6">
-           <h3 className="text-xl font-bold text-neutral-900 border-b border-neutral-100 pb-4">Status Sistem</h3>
-           <div className="bg-neutral-900 text-white p-8 rounded-[2rem] shadow-strong space-y-6 relative overflow-hidden">
-              <div className="relative z-10 space-y-2">
-                 <p className="text-primary-400 text-[10px] font-black uppercase tracking-[0.2em]">Kesehatan Stok</p>
-                 <h4 className="text-2xl font-bold leading-tight">Seluruh wilayah dalam status aman</h4>
-                 <p className="text-neutral-400 text-xs leading-relaxed opacity-80">SiDagas mendeteksi aliran pasokan yang stabil di seluruh pangkalan terdaftar.</p>
-              </div>
-              <div className="relative z-10 flex gap-3 pt-4">
-                 <div className="bg-white/5 border border-white/10 p-4 rounded-2xl flex-1 text-center backdrop-blur-sm">
-                    <p className="text-[10px] font-bold text-white/40 uppercase mb-1">Integritas</p>
-                    <p className="text-lg font-black text-white">99%</p>
-                 </div>
-                 <div className="bg-white/5 border border-white/10 p-4 rounded-2xl flex-1 text-center backdrop-blur-sm">
-                    <p className="text-[10px] font-bold text-white/40 uppercase mb-1">Server</p>
-                    <p className="text-lg font-black text-primary-400">Stable</p>
-                 </div>
-              </div>
-              <div className="absolute top-0 right-0 w-32 h-32 bg-primary-600/10 rounded-full blur-3xl -mr-16 -mt-16" />
-           </div>
         </div>
       </div>
     </div>

@@ -1,9 +1,10 @@
 "use client";
 
-import { Flame, LayoutDashboard, Users, MapPin, ShieldCheck, LogOut, User, Bell } from "lucide-react";
+import { LayoutDashboard, Users, MapPin, ShieldCheck, LogOut, User, Bell } from "lucide-react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function AdminDashboardLayout({
   children,
@@ -28,8 +29,8 @@ export default function AdminDashboardLayout({
       <aside className="w-72 bg-white border-r border-neutral-200 hidden md:flex flex-col sticky top-0 h-screen">
         <div className="p-8">
           <Link href="/" className="flex items-center gap-2">
-            <div className="bg-primary-600 p-1.5 rounded-lg shadow-sm">
-              <Flame className="w-5 h-5 text-white" />
+            <div className="relative w-8 h-8">
+              <Image src="/SiDagas.logo.png" alt="SiDagas Logo" fill className="object-contain" />
             </div>
             <span className="text-xl font-bold text-neutral-900 tracking-tight">SiDagas <span className="text-[10px] text-primary-600 border border-primary-200 px-2 py-0.5 rounded-md uppercase ml-1">Admin</span></span>
           </Link>
@@ -80,7 +81,9 @@ export default function AdminDashboardLayout({
       <main className="flex-1 min-h-screen">
         <header className="bg-white/80 backdrop-blur-md border-b border-neutral-200 h-20 flex items-center justify-between px-8 sticky top-0 z-30">
             <div className="md:hidden flex items-center gap-2">
-                <Flame className="w-6 h-6 text-primary-600" />
+                <div className="relative w-7 h-7">
+                    <Image src="/SiDagas.logo.png" alt="SiDagas Logo" fill className="object-contain" />
+                </div>
                 <span className="font-bold text-neutral-900 uppercase text-xs tracking-widest">SiDagas Admin</span>
             </div>
             <div className="flex items-center gap-4 ml-auto">

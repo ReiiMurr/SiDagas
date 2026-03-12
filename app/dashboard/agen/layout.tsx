@@ -1,9 +1,10 @@
 "use client";
 
-import { Flame, LayoutDashboard, MapPin, Settings, LogOut, Package, User } from "lucide-react";
+import { LayoutDashboard, MapPin, Settings, LogOut, Package, User } from "lucide-react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function DashboardLayout({
   children,
@@ -30,8 +31,8 @@ export default function DashboardLayout({
       <aside className="w-72 bg-white border-r border-neutral-200/60 hidden md:flex flex-col sticky top-0 h-screen z-40">
         <div className="p-8 pb-10">
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="bg-primary-600 p-2.5 rounded-2xl transition-all group-hover:scale-110 shadow-lg shadow-primary-500/20">
-              <Flame className="w-6 h-6 text-white" />
+            <div className="relative w-10 h-10 transition-all group-hover:scale-110">
+              <Image src="/SiDagas.logo.png" alt="SiDagas Logo" fill className="object-contain" />
             </div>
             <span className="text-2xl font-bold text-neutral-900 tracking-tight">
               SiDagas
@@ -87,8 +88,8 @@ export default function DashboardLayout({
         <header className="bg-white/80 backdrop-blur-xl border-b border-neutral-200/60 p-5 sticky top-0 z-30 md:hidden">
             <div className="flex justify-between items-center">
                 <Link href="/" className="flex items-center gap-2.5">
-                    <div className="bg-primary-600 p-1.5 rounded-lg">
-                        <Flame className="w-5 h-5 text-white" />
+                    <div className="relative w-8 h-8">
+                        <Image src="/SiDagas.logo.png" alt="SiDagas Logo" fill className="object-contain" />
                     </div>
                     <span className="font-bold text-neutral-900 text-lg">SiDagas</span>
                 </Link>
